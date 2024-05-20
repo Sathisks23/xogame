@@ -43,11 +43,11 @@ function clicked(element){
 
     for(i in patern){
 
-        // if(patern[i].join()==ooutput.join() ){
-        //         alert('O is winner')
-        // }else if((patern[i].join()==xoutput.join())){
-        //        alert("X iswinner")
-        // }
+        if(patern[i].join()==ooutput.join() ){
+                alert('O is winner')
+        }else if((patern[i].join()==xoutput.join())){
+               alert("X iswinner")
+        }
 
         let index = patern[i];
         for(j in index){
