@@ -1,7 +1,11 @@
-let box = document.querySelectorAll('.box')
-    box.forEach(e=>{e.addEventListener('click',function(){clicked(this)})})
-
-     
+let box = document.querySelectorAll('.box');
+box.forEach(e => {
+    e.addEventListener('click', function() {
+        if (!this.classList.contains('Xstyle') && !this.classList.contains('Ostyle')) {
+            clicked(this);
+        }
+    });
+});
 
     
 
